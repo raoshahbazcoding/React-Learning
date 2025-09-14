@@ -1,6 +1,7 @@
 import { useState } from "react"
 
 
+
 function App() {
 
   const username = 'Rao Shahbaz'
@@ -22,19 +23,21 @@ function App() {
 
   return (
     <>
-      <h1>
+      <h1 className="bg-red-400 text-center text-white font-extrabold py-5">
         This Is JSX Syntax || THis IS Evluated Expression
       </h1>
-      <h2>
+      <h2 className="text-center py-5" >
         This Is UserName : {username}  
       </h2>
-
-      <button onClick={add}>
+<div className="flex justify-center">
+  
+      <button onClick={add} className="bg-black text-white px-5 py-2 rounded-2xl" >
         Add {counter}
       </button>
-      <button onClick={subtract}>
+      <button onClick={subtract} className="bg-black text-white px-5 py-2 rounded-2xl">
         Subrtract {counter}
       </button>
+</div>
 
     </>
   )

@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-
+import Card from "./components/Card"
 
 function App() {
 
@@ -29,7 +29,7 @@ function App() {
       <h2 className="text-center py-5" >
         This Is UserName : {username}  
       </h2>
-<div className="flex justify-center">
+<div className="flex justify-center gap-2">
   
       <button onClick={add} className="bg-black text-white px-5 py-2 rounded-2xl" >
         Add {counter}
@@ -38,6 +38,8 @@ function App() {
         Subrtract {counter}
       </button>
 </div>
+
+<Card  username = "Rao Shahabz"/>
 
     </>
   )
